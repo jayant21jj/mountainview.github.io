@@ -1,0 +1,291 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+header{  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    flex-wrap: wrap;
+    position:absolute;
+    width: 100%;
+    top: 0;}
+
+header nav ul{ list-style: none;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    
+}
+
+header nav ul li a{text-decoration: none;
+color: indigo;
+font-family: 'Exo',sans-serif;
+
+}
+
+header h2{font-weight: 300;
+    font-family: 'pacifico',sans-serif;
+    font-size: 30px;
+    color: indigo;
+}
+
+#banner{background-image: url("./assets/img/header.jpg");
+background-position: center;
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+z-index: -1;}
+
+#bancont h1{font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-bottom: 1.5rem;
+    color: rgb(35, 5, 75);
+}
+
+#bancont h3{
+    font-family: 'Exo',cursive;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 40px;
+    color: rgb(35, 5, 75);
+}
+
+#bancont button{
+    background-color: rgb(105, 5, 235);
+    color: rgb(236, 239, 241);
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#bancont button a{color: beige;
+text-decoration: none;}
+
+#destination{padding: 3rem 6rem;}
+
+#destcont{
+    text-align: center;
+    
+}
+
+
+#destcont h3{font-size: 30px;
+    margin-bottom: 0.5rem;
+}
+
+#destcont p{font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+#imagegrid{
+display: flex;
+flex-wrap: wrap;
+}
+
+#imagegrid picture img{width: 100%;
+height: 100%;}
+
+#imagegrid .small{flex-basis: 40%;
+    padding: 1rem;
+    height: 400px;
+}
+
+#imagegrid .large{flex-basis: 60%;
+padding: 1rem;
+height: 400px;}
+
+hr{width: 350px;
+margin: 20px auto;
+height: 3px;
+background-color: blue;
+border: none;}
+
+/* tour section */
+#tour-feature{display: flex;
+flex-wrap: wrap;
+align-items: center;
+background-color: rgb(230, 220, 220);
+
+}
+
+.feature{text-align: center;
+line-height: 30px;}
+
+
+#tour-feature .feature{flex-basis: 50%;
+padding: 2rem 6rem;
+height: 300px;
+}
+
+
+#tour{padding: 3rem, 6rem;}
+
+#tour-content{text-align: center;}
+i{font-size: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+.feature h4{font-size: 28px;
+margin-bottom: 1.5rem;}
+
+.feature p{font-size: 18px;}
+
+#tour-content h3{font-size: 30px;
+    margin-bottom: 2rem;
+    font-family: 'satisfy', cursive;
+}
+
+#tour-content p{font-size: 25px;
+    margin-bottom: 0.5rem;
+    font-family: 'Cookie', cursive;
+}
+
+/* Testemonial section */
+
+#testemonial h2{text-align: center;
+    font-size: 32px;
+margin-bottom: 1.5rem;
+margin-top: 4rem;
+font-family: 'Merienda', cursive;
+}
+
+#testemonial-content{text-align: center;
+padding: 2rem 6rem;
+width: 50%vw;}
+
+
+#testemonial-content h3{font-size: 25px;
+margin-bottom: 1rem;
+margin-top: 1rem;
+font-weight: 200;
+font-family: 'Kalam', cursive;}
+
+#testemonial-content h5{font-size: 16px;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    font-weight: 200;}
+
+/*learn section */
+
+#learn{text-align: center;
+        padding: 2rem 6rem;
+            background-color: rgb(230, 220, 220);
+}
+
+#learn h2{margin-bottom: 4px;}
+
+#learn input{width: 30rem;
+height: 2.5rem;
+margin-top: 1rem;
+margin-bottom: 1rem;}
+
+#learn button{width: 10rem;
+    height: 2.3rem;
+background-color: rgb(150, 150, 252);
+font-size: 0.9rem;
+font-weight: 600;
+text-transform: uppercase;
+padding:5px;
+font-family: 'exo',cursive;}
+
+/*footer section*/
+
+#footer{display: flex;  
+flex-wrap: wrap;
+justify-content: space-between;
+
+position: relative;
+bottom: 0;
+width: 100vw;
+font-size: 18px;
+background-color: rgb(120, 120, 240);
+padding: 20px 60px;
+}
+
+#footer-icons{display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 70px;
+align-items: center;
+}
+
+
+
+
+#footer-icons i{font-size: 18px;
+margin-bottom: 0;}
+
+
+/* Media queries for large screen*/
+
+@media screen and (width<=850px){
+    #imagegrid .small{flex-basis: 50%;
+
+}
+#imagegrid .large{flex-basis: 50%;}
+
+
+
+.feature{text-align: center;
+    line-height: 20px;}
+
+.feature h4{font-size: 25px;
+        margin-bottom: 1rem;}
+
+.feature p{font-size: 16px;
+font-family: cursive;}
+
+
+}
+/* for small screens */
+
+@media screen and (width<=700px){
+
+    #bancont h3{font-size: 30px;}
+
+    #imagegrid .small{flex-basis: 100%;}
+
+    #imagegrid .large{flex-basis: 100%;}
+
+
+    #tour-feature .feature{padding: 2rem 4rem;}
+
+
+    .feature{text-align: center;
+    }
+
+    .feature h4{font-size: 25px;
+        }
+
+    .feature p{font-size: 14px;
+    font-family: cursive;}
+
+    #testemonial-content h3{font-size: 18px;
+        font-family: 'satisy';}
+
+   
+
+    #tour-content p{font-size:20px}
+    
+
+    #footer{font-size: 15px;
+    margin-bottom: 0;}
+
+    #footer i{margin-bottom: 0;}
+
+    #learn h2{margin-bottom: 4px;}
+
+    #learn h3{font-size:1rem;
+    margin}
+
+    #learn input{width: 20rem;}
+
+    
+
+}
